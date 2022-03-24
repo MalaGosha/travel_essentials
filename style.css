@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(189,186,187,0.89);
+}
+
+.wrapper{
+    width: 690px;
+    background-color: rgba(131, 185, 255, 0.68);
+    box-shadow: 0 0 10px rgba(26,57,121,0.89);
+    border-radius: 5px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 360px;
+    padding: 20px 40px;
+    background-image: url("img/packing_bag1.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(26,57,121,0.89); */
+    z-index: -1;
+}
+
+h1{
+    margin-bottom: 192px;
+    margin-left: -18px;
+    font-family: 'Georgia', cursive;
+    font-size: 37px;
+    color: rgb(122, 186, 248);
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+}
+
+.search{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.85);
+}
+
+.item-list{
+    padding: 20px 40px;
+}
+
+h2{
+    padding: 30px 0;
+}
+
+ul{
+    padding-bottom: 30px;
+    font-size: 23px;
+    list-style: none;
+}
+
+li{
+    padding: 8px 30px;
+    border-bottom: 1px solid rgba(203, 202, 202, 0.95);
+    width: 100%;
+}
+
+li:last-child{
+    padding: 8px 30px;
+    border-bottom: 0;
+}
+
+.second_level {
+    display: none;
+}
+
+.main_menu li:hover .second_level{
+    display: block;
+    border-bottom: 0;
+}
+
+.inWrite {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.85);
+}
+
+
+
+
