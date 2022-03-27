@@ -2,67 +2,495 @@
 <html class="no-js" lang="">
 
 <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Wyszukiwarka rzeczy na wyjazd</title>
-      <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-      <script src="script.js" async></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wyszukiwarka rzeczy na wyjazd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
 </head>
 
 <body>
 
 <div class="wrapper">
-      <div class="header">
-            <div class="shadow"></div>
-            <h1> Niezbędnik <br> wyjazdowy </h1>
-            <input type="text" class="search" placeholder="Wpisz nazwę szukanej rzeczy"/>
-      </div>
+    <div class="header">
+        <div class="shadow"></div>
+        <h1> Niezbędnik <br> wyjazdowy </h1>
+        <input type="text" class="search" placeholder="Wpisz nazwę szukanej rzeczy"/>
+    </div>
 
-      <div class="item-list">
-            <h2> Lista rzeczy potrzebnych na wyjazd</h2>
-            <ul class="main_menu">
-                  <li>Kosmetyki
-                        <div class="second_level">
-                              <ul>
-                                    <li>Kosmetyki do kąpieli</li>
-                                    <li>Kosmetyki do makijażu</li>
-                                    <li>Kosmetyki do opalania się</li>
-                              </ul>
-                        </div>
-                  </li>
-                  <li>Ręczniki</li>
-                  <li>Bielizna
-                        <div class="second_level">
-                              <ul>
-                                    <li>Skarpetki</li>
-                                    <li>Majtki</li>
-                                    <li>Biustonosze</li>
-                                    <li>Bielizna termoaktywna</li>
-                              </ul>
-                        </div>
-                  </li>
-                  <li>Ubrania
-                        <div class="second_level">
-                              <ul>
-                                    <li>Spodnie</li>
-                                    <li>Spódnice</li>
-                                    <li>Sukienki</li>
-                                    <li>Szorty</li>
-                                    <li>Koszulki</li>
-                                    <li>Koszule</li>
-                                    <li>Swetry</li>
-                                    <li>Marynarki</li>
-                                    <li><input type="text" class="inWrite" placeholder="wpisz swoją rzecz do niezbędnika"/></li>
-                              </ul>
-                        </div></li>
-                  <li>Akcesoria</li>
-                  <li>Buty</li>
-                  <li>Leki</li>
-                  <li>Dokumenty</li>
-                  <li>Sprzęt elektroniczny</li>
-            </ul>
-      </div>
+    <div class="item-list">
+        <h2> Lista rzeczy potrzebnych na wyjazd</h2>
+        <ul class="main_menu">
+
+            <li><label for="cosmetics">
+                    <div class="div1">Kosmetyki</div>
+                </label>
+                    <span><input
+                            class="checkBox"
+                            type="checkbox"
+                            id="cosmetics"/>
+                    </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="cosmetics1">
+                            <div class="div2">Kosmetyki do kąpieli</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="cosmetics1"/>
+                            </span>
+                        </li>
+                        <li><label for="cosmetics2">
+                            <div class="div2">Kosmetyki do makijażu</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="cosmetics2"/>
+                            </span>
+                        </li>
+                        <li><label for="cosmetics3">
+                            <div class="div2">Kosmetyki do opalania się</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="cosmetics3"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="towels">
+                <div class="div1">Ręczniki</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="towels"/>
+                </span>
+
+            <li><label for="underwear">
+                <div class="div1">Bielizna</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="underwear"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="sucks">
+                            <div class="div2">Skarpetki</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="sucks"/>
+                            </span>
+                        </li>
+                        <li><label for="panties">
+                            <div class="div2">Majtki</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="panties"/>
+                            </span>
+                        </li>
+                        <li><label for="bras">
+                            <div class="div2">Biustonosze</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="bras"/>
+                            </span>
+                        </li>
+                        <li><label for="underwearTerm">
+                            <div class="div2">Bielizna termoaktywna</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="underwearTerm"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="clothes">
+                <div class="div1">Ubrania</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="clothes"/></span>
+
+                <div class="second_level">
+                    <ul>
+                        <li><label for="pants">
+                            <div class="div2">Spodnie</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="pants"/>
+                            </span>
+                        </li>
+                        <li><label for="skretch">
+                            <div class="div2">Spódnice</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="skretch"/>
+                            </span></li>
+                        <li><label for="dress">
+                            <div class="div2">Sukienki</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="dress"/>
+                            </span>
+                        </li>
+                        <li><label for="shorts">
+                            <div class="div2">Szorty</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="shorts"/>
+                            </span>
+                        </li>
+                        <li><label for="tshirts">
+                            <div class="div2">Koszulki</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="tshirts"/>
+                            </span>
+                        </li>
+                        <li><label for="shirts">
+                            <div class="div2">Koszule</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="shirts"/>
+                            </span>
+                        </li>
+                        <li><label for="sweater">
+                            <div class="div2">Swetry</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="sweater"/>
+                            </span>
+                        </li>
+                        <li><label for="jacket">
+                            <div class="div2">Marynarki</div>
+                        </label>
+                            <span><input
+                                    class="rightCheckBox"
+                                    type="checkbox"
+                                    id="jacket"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="accesories">
+                <div class="div1">Akcesoria</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="accesories"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="accesories1">
+                            <div class="div2">Nakrycie głowy</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories1"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories2">
+                            <div class="div2">Szal</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories2"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories3">
+                            <div class="div2">Pasek</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories3"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories4">
+                            <div class="div2">Biżuteria</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories4"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories5">
+                            <div class="div2">Torebka</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories5"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories6">
+                            <div class="div2">Plecak</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories6"/>
+                            </span>
+                        </li>
+                        <li><label for="accesories7">
+                            <div class="div2">Rękawiczki</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="accesories7"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+
+            <li><label for="shoes">
+                <div class="div1">Buty</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="shoes"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="shoes1">
+                            <div class="div2">Buty basenowe</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="shoes1"/>
+                            </span>
+                        </li>
+                        <li><label for="shoes2">
+                            <div class="div2">Buty na co dzień</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="shoes2"/>
+                            </span>
+                        </li>
+                        <li><label for="shoes3">
+                            <div class="div2">Buty wizytowe</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="shoes3"/>
+                            </span>
+                        </li>
+                        <li><label for="shoes4">
+                            <div class="div2">Buty trekkingowe</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="shoes4"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="medicine">
+                <div class="div1">Leki</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="medicine"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="medicine1">
+                            <div class="div2">Leki na chorobę lokomocyjną</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="medicine1"/>
+                            </span>
+                        </li>
+                        <li><label for="medicine2">
+                            <div class="div2">Leki na zatrucie pokarmowe</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="medicine2"/>
+                            </span>
+                        </li>
+                        <li><label for="medicine3">
+                            <div class="div2">Leki na przeziębienie</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="medicine3"/>
+                            </span>
+                        </li>
+                        <li><label for="medicine4">
+                            <div class="div2">Leki na urazy, skaleczenia</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="medicine4"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="documents">
+                <div class="div1">Dokumenty</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="documents"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="documents1">
+                            <div class="div2">Dowód osobisty</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="documents1"/>
+                            </span>
+                        </li>
+                        <li><label for="documents2">
+                            <div class="div2">Prawo jazdy</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="documents2"/>
+                            </span>
+                        </li>
+                        <li><label for="documents3">
+                            <div class="div2">Paszport</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="documents3"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="electronic">
+                <div class="div1">Sprzęt elektroniczny</div>
+            </label>
+                <span><input
+                        class="checkBox"
+                        type="checkbox"
+                        id="electronic"/>
+                </span>
+                <div class="second_level">
+                    <ul>
+                        <li><label for="electronic1">
+                            <div class="div2">Laptop</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="electronic1"/>
+                            </span>
+                        </li>
+                        <li><label for="electronic2">
+                            <div class="div2">Tablet</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="electronic2"/>
+                            </span>
+                        </li>
+                        <li><label for="electronic3">
+                            <div class="div2">Aparat fotograficzny</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="electronic3"/>
+                            </span>
+                        </li>
+                        <li><label for="electronic4">
+                            <div class="div2">Powerbank</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="electronic4"/>
+                            </span>
+                        </li>
+                        <li><label for="electronic5">
+                            <div class="div2">Ładowarka</div>
+                        </label>
+                            <span><input
+                                    class="checkBox"
+                                    type="checkbox"
+                                    id="electronic5"/>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><label for="clothes">
+                <div class="div1"><input type="text" class="inWrite"
+                                         placeholder="wpisz swoją rzecz do niezbędnika"/></li>
+        </ul>
+    </div>
 
 </div>
 
